@@ -1,0 +1,31 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 du parcours de développeur web d'Openclassrooms",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arasolonjatovo/ohmyfood.git"
+  },
+  "keywords": [
+    "html5",
+    "css3",
+    "sass",
+    "ohmyfood",
+    "restaurants",
+    "openclassrooms"
+  ],
+  "author": "Audrey RASOLONJATOVO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arasolonjatovo/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/arasolonjatovo/ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.54.4"
+  }
+}
