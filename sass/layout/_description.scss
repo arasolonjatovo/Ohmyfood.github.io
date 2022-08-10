@@ -1,0 +1,19 @@
+.heading__description {
+    background-color: #F6F6F6;
+    text-align: center;
+    padding: 4%;
+    line-height: 3em;
+    .heading__button {
+        padding: 1.2%;
+        margin-top: 25px;
+        border-radius: 40px;
+        font-size: $body-size;
+        color: white;
+        background: rgb(255, 121, 218);
+        background: linear-gradient(180deg, $secondary-color 0%, $primary-color 60%);
+        border: none;
+        font-weight: 600;
+        box-shadow: -1px 10px 30px -8px rgba(0, 0, 0, 0.75);
+        cursor: pointer;
+    }
+}
