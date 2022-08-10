@@ -4,8 +4,7 @@
   "description": "Projet 3 du parcours de développeur web d'Openclassrooms",
   "main": "index.html",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded",
-    "prefix": "postcss ./public/css/style.css --use autoprefixer -d./public/css/prefixed/"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded"
   },
   "repository": {
     "type": "git",
