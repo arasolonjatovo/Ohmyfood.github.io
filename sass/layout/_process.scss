@@ -1,0 +1,43 @@
+.process {
+    h2 {
+        text-align: center;
+        padding: 2.7%;
+    }
+    ul {
+        display: flex;
+        gap: 10rem;
+        justify-content: center;
+        padding: .5% 2%;
+        counter-reset: tutoStep;
+        list-style: none;
+        li {
+            font-size: $body-size;
+            padding: 1.5% 2.7%;
+            background-color: #F6F6F6;
+            border-radius: 18px;
+            font-weight: 500;
+            box-shadow: $button-shadow;
+            position: relative;
+            &::before {
+                width: 30px;
+                height: 30px;
+                border-radius: 60px;
+                counter-increment: tutoStep 1;
+                content: counter(tutoStep) " ";
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                background-color: $primary-color;
+                color: white;
+                left: -15px;
+                top: 25px;
+            }
+            .fa-solid {
+                margin-right: 20px;
+                font-size: $body-size;
+                color: #7E7E7E;
+            }
+        }
+    }
+}

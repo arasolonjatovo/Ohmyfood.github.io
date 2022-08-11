@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap");
 .heading__nav {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -46,7 +46,7 @@ h2 {
 .heading__description {
   background-color: #F6F6F6;
   text-align: center;
-  padding: 4%;
+  padding: 3%;
   line-height: 3em;
 }
 .heading__description .heading__button {
@@ -59,8 +59,50 @@ h2 {
   background: linear-gradient(180deg, #FF79DA 0%, #9356DC 60%);
   border: none;
   font-weight: 600;
-  box-shadow: -1px 10px 30px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
   cursor: pointer;
+}
+
+.process h2 {
+  text-align: center;
+  padding: 2.7%;
+}
+.process ul {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  padding: 0.5% 2%;
+  counter-reset: tutoStep;
+  list-style: none;
+}
+.process ul li {
+  font-size: 1.1rem;
+  padding: 1.5% 2.7%;
+  background-color: #F6F6F6;
+  border-radius: 18px;
+  font-weight: 500;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+  position: relative;
+}
+.process ul li::before {
+  width: 30px;
+  height: 30px;
+  border-radius: 60px;
+  counter-increment: tutoStep 1;
+  content: counter(tutoStep) " ";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #9356DC;
+  color: white;
+  left: -15px;
+  top: 25px;
+}
+.process ul li .fa-solid {
+  margin-right: 20px;
+  font-size: 1.1rem;
+  color: #7E7E7E;
 }
 
 /*# sourceMappingURL=style.css.map */
