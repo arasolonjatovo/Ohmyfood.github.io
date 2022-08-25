@@ -1,12 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap");
 .heading__nav {
   font-family: "Shrikhand", cursive;
-  text-align: center;
   background-color: white;
+  text-align: center;
   padding: 0.5%;
   font-size: 2.5rem;
   box-shadow: 0px 7px 40px -1px rgba(0, 0, 0, 0.23);
   border: white;
+}
+.heading__nav--back {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading__nav--back .fa-solid {
+  position: absolute;
+  left: 2%;
+  font-size: 1.5rem;
 }
 @media (max-width: 778px) {
   .heading__nav {
