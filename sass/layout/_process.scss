@@ -8,6 +8,9 @@
         padding: .5% 2%;
         counter-reset: tutoStep;
         list-style: none;
+        @media (max-width: $phone) {
+            flex-direction: column;
+        }
         li {
             padding: 1.5% 2.7%;
             background-color: #F6F6F6;
