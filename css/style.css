@@ -95,7 +95,7 @@ img {
 @media (max-width: 778px) {
   .heading__description {
     line-height: normal;
-    padding: 20% 5%;
+    padding: 18% 5%;
   }
 }
 @media (max-width: 778px) {
@@ -130,6 +130,17 @@ img {
   margin: 0 5%;
   margin-bottom: 4%;
 }
+@media (max-width: 778px) {
+  .process {
+    padding: 8% 2%;
+  }
+}
+@media (max-width: 778px) {
+  .process h2 {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+}
 .process ul {
   display: flex;
   gap: 8rem;
@@ -140,7 +151,10 @@ img {
 }
 @media (max-width: 778px) {
   .process ul {
+    margin-top: 10%;
     flex-direction: column;
+    gap: 0;
+    row-gap: 30px;
   }
 }
 .process ul li {
@@ -150,6 +164,11 @@ img {
   font-weight: 500;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
   position: relative;
+}
+@media (max-width: 778px) {
+  .process ul li {
+    padding: 9%;
+  }
 }
 .process ul li::before {
   width: 30px;
