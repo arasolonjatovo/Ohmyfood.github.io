@@ -9,13 +9,19 @@
   border: white;
 }
 
+.__sub-title {
+  text-align: center;
+  padding: 2.7%;
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-size: 1.1rem;
+  box-sizing: border-box;
 }
 
 body {
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
@@ -32,8 +38,12 @@ h2 {
   font-size: 1.9rem;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .heading__localisation {
-  font-size: 1.1rem;
   padding: 0.9%;
   margin-top: 5px;
   background-color: #eaeaea;
@@ -53,30 +63,27 @@ h2 {
   padding: 1.2%;
   margin-top: 25px;
   border-radius: 40px;
-  font-size: 1.1rem;
   color: white;
-  background: rgb(255, 121, 218);
-  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 60%);
+  background: #FF79DA linear-gradient(180deg, #FF79DA 0%, #9356DC 60%);
   border: none;
   font-weight: 600;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
   cursor: pointer;
 }
 
-.process h2 {
-  text-align: center;
-  padding: 2.7%;
+.process {
+  margin: 0 5%;
+  margin-bottom: 4%;
 }
 .process ul {
   display: flex;
-  gap: 10rem;
+  gap: 8rem;
   justify-content: center;
   padding: 0.5% 2%;
   counter-reset: tutoStep;
   list-style: none;
 }
 .process ul li {
-  font-size: 1.1rem;
   padding: 1.5% 2.7%;
   background-color: #F6F6F6;
   border-radius: 18px;
@@ -101,8 +108,53 @@ h2 {
 }
 .process ul li .fa-solid {
   margin-right: 20px;
-  font-size: 1.1rem;
   color: #7E7E7E;
+}
+
+.menu {
+  margin: 0 4%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+  padding-bottom: 4%;
+  max-height: 800px;
+}
+.menu__card {
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+  position: relative;
+}
+.menu__description {
+  padding: 4%;
+  line-height: 30px;
+  bottom: 0;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+}
+.menu__image {
+  background-color: white;
+  position: relative;
+}
+.menu__image img {
+  object-fit: cover;
+  object-position: center;
+}
+.menu__image--new::after {
+  content: "Nouveau";
+  position: absolute;
+  background-color: #99E3D0;
+  padding: 2% 4%;
+  color: #139273;
+  font-weight: 600;
+  right: 20px;
+  top: 20px;
+}
+
+nav {
+  background-color: #F6F6F6;
 }
 
 /*# sourceMappingURL=style.css.map */

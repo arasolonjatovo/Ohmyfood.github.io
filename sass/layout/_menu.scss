@@ -1,0 +1,49 @@
+.menu {
+    margin: 0 4%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+    padding-bottom: 4%;
+    max-height: 800px;
+
+    &__card {
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: $button-shadow;
+        position: relative;
+    }
+
+    &__description {
+        padding: 4%;
+        line-height: 30px;
+        bottom: 0;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+    }
+
+    &__image {
+        background-color: white;
+        position: relative;
+        & img {
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &--new::after {
+            content: "Nouveau";
+            position: absolute;
+            background-color: $tertiary-color;
+            padding: 2% 4%;
+            color: #139273;
+            font-weight: 600;
+            right: 20px;
+            top: 20px;
+        }
+    }
+}
+
+nav {
+    background-color: #F6F6F6;
+}

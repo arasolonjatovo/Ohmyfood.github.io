@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: $body-size;
+    box-sizing: border-box;
 }
 
 body {
-    box-sizing: border-box;
+
     font-family: $body-font;
 }
 
@@ -19,4 +21,9 @@ p {
 
 h2 {
     font-size: $title-size;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
