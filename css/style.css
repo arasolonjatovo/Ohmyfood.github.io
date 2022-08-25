@@ -79,7 +79,7 @@ img {
 @media (max-width: 778px) {
   .heading__localisation {
     padding: 2% 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .heading__localisation .fa-solid {
@@ -92,6 +92,23 @@ img {
   padding: 3%;
   line-height: 3em;
 }
+@media (max-width: 778px) {
+  .heading__description {
+    line-height: normal;
+    padding: 20% 5%;
+  }
+}
+@media (max-width: 778px) {
+  .heading__description h2 {
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 778px) {
+  .heading__description p {
+    font-size: 1rem;
+  }
+}
 .heading__description .heading__button {
   padding: 1.2%;
   margin-top: 25px;
@@ -102,6 +119,11 @@ img {
   font-weight: 600;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
   cursor: pointer;
+}
+@media (max-width: 778px) {
+  .heading__description .heading__button {
+    padding: 5%;
+  }
 }
 
 .process {

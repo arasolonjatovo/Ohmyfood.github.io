@@ -3,6 +3,22 @@
     text-align: center;
     padding: 3%;
     line-height: 3em;
+    @media (max-width: $phone) {
+        line-height: normal;
+        padding: 20% 5%;
+    }
+    & h2 {
+        @media (max-width: $phone) {
+            font-size: 1.6rem;
+            margin-bottom: 5%;
+        }
+    }
+    & p {
+        @media (max-width: $phone) {
+            font-size: 1rem;
+        }
+
+    }
     .heading__button {
         padding: 1.2%;
         margin-top: 25px;
@@ -13,5 +29,8 @@
         font-weight: 600;
         box-shadow: $button-shadow;
         cursor: pointer;
+        @media (max-width: $phone) {
+            padding: 5%;
+        }
     }
 }
