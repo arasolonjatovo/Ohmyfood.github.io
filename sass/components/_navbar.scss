@@ -8,13 +8,11 @@
     border: white;
     &--back {
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         & .fa-solid {
             position: absolute;
             left: 2%;
             font-size: 1.5rem;
+            top: 35%;
         }
     }
     @media (max-width: $phone) {
