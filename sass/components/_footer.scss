@@ -1,0 +1,23 @@
+.footer {
+    padding: 2% 5%;
+    background-color: #353535;
+    color: white;
+
+    &__logo {
+        font-family: $title-font;
+        text-align: center;
+    }
+
+    ul {
+        margin: 2%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        font-weight: 500;
+
+        a {
+            color: white;
+        }
+    }
+}

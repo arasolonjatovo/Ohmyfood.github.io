@@ -14,6 +14,27 @@
   padding: 2.7%;
 }
 
+.footer {
+  padding: 2% 5%;
+  background-color: #353535;
+  color: white;
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+}
+.footer ul {
+  margin: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-weight: 500;
+}
+.footer ul a {
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -135,7 +156,6 @@ img {
   width: 100%;
 }
 .menu__image {
-  background-color: white;
   position: relative;
 }
 .menu__image img {
