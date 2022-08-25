@@ -31,9 +31,20 @@
   background-color: #353535;
   color: white;
 }
+@media (max-width: 778px) {
+  .footer {
+    padding: 8%;
+  }
+}
 .footer__logo {
   font-family: "Shrikhand", cursive;
   text-align: center;
+}
+@media (max-width: 778px) {
+  .footer__logo {
+    text-align: left;
+    font-size: 1.2rem;
+  }
 }
 .footer ul {
   margin: 2%;
@@ -43,8 +54,20 @@
   list-style: none;
   font-weight: 500;
 }
-.footer ul a {
+@media (max-width: 778px) {
+  .footer ul {
+    flex-direction: column;
+    line-height: 30px;
+    align-items: flex-start;
+  }
+}
+.footer ul a, .footer ul .fa-solid {
   color: white;
+}
+@media (max-width: 778px) {
+  .footer ul a, .footer ul .fa-solid {
+    font-size: 0.8rem;
+  }
 }
 
 * {
@@ -225,7 +248,7 @@ img {
 }
 @media (max-width: 778px) {
   .menu__card {
-    height: 280px;
+    height: 270px;
   }
 }
 .menu__description {

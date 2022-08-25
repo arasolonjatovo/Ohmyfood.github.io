@@ -2,10 +2,17 @@
     padding: 2% 5%;
     background-color: #353535;
     color: white;
+    @media (max-width: $phone) {
+        padding: 8%;
+    }
 
     &__logo {
         font-family: $title-font;
         text-align: center;
+        @media (max-width: $phone) {
+            text-align: left;
+            font-size: 1.2rem;
+        }
     }
 
     ul {
@@ -15,9 +22,17 @@
         align-items: center;
         list-style: none;
         font-weight: 500;
-
-        a {
+        @media (max-width: $phone) {
+            flex-direction: column;
+            line-height: 30px;
+            align-items: flex-start;
+        }
+        
+        a, .fa-solid {
             color: white;
+            @media (max-width: $phone) {
+                font-size: .8rem;
+            }
         }
     }
 }
