@@ -6,12 +6,26 @@
     grid-column-gap: 40px;
     padding-bottom: 4%;
     max-height: 800px;
+    &__nav {
+        @media (max-width: $phone) {
+            padding: 10% 0;
+        }
+    }
+    @media (max-width: $phone) {
+        grid-template-columns: 1fr;
+        max-height: none;
+        grid-row-gap: 20px;
+    }
 
     &__card {
         border-radius: 30px;
         overflow: hidden;
         box-shadow: $button-shadow;
         position: relative;
+
+        @media (max-width: $phone) {
+            height: 280px;
+        }
     }
 
     &__description {
@@ -25,6 +39,7 @@
 
     &__image {
         position: relative;
+
         & img {
             object-fit: cover;
             object-position: center;

@@ -1,4 +1,8 @@
 .__sub-title {
         text-align: center;
-        padding: 2.7%;
+        padding: 3% 5%;
+        @media (max-width: $phone) {
+        font-size: 1.6rem;
+        text-align: left;
+        }
 }

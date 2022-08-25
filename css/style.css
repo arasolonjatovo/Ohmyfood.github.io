@@ -17,7 +17,13 @@
 
 .__sub-title {
   text-align: center;
-  padding: 2.7%;
+  padding: 3% 5%;
+}
+@media (max-width: 778px) {
+  .__sub-title {
+    font-size: 1.6rem;
+    text-align: left;
+  }
 }
 
 .footer {
@@ -132,7 +138,7 @@ img {
 }
 @media (max-width: 778px) {
   .process {
-    padding: 8% 2%;
+    padding: 8% 0;
   }
 }
 @media (max-width: 778px) {
@@ -199,11 +205,28 @@ img {
   padding-bottom: 4%;
   max-height: 800px;
 }
+@media (max-width: 778px) {
+  .menu__nav {
+    padding: 10% 0;
+  }
+}
+@media (max-width: 778px) {
+  .menu {
+    grid-template-columns: 1fr;
+    max-height: none;
+    grid-row-gap: 20px;
+  }
+}
 .menu__card {
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
   position: relative;
+}
+@media (max-width: 778px) {
+  .menu__card {
+    height: 280px;
+  }
 }
 .menu__description {
   padding: 4%;
