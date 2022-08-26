@@ -81,12 +81,54 @@
 
 .heading {
   background-color: white;
-  height: 500px;
+  height: 600px;
+  position: relative;
 }
 .heading__background {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.list {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  top: 55%;
+  border-radius: 60px 60px 0 0;
+}
+.list__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5%;
+}
+.list__description .fa-regular {
+  font-size: 1.5rem;
+}
+.list__title {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  padding: 3%;
+  font-size: 2.5rem;
+}
+
+.plate {
+  display: flex;
+  justify-content: center;
+  column-gap: 18em;
+}
+.plate__course {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #353535;
+}
+.plate hr {
+  height: 4px;
+  background-color: #99E3D0;
+  border: none;
+  margin-bottom: 5%;
+  width: 60px;
 }
 
 * {
