@@ -1,0 +1,9 @@
+.heading {
+    background-color: white;
+    height: 500px;
+    &__background {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}

@@ -79,6 +79,16 @@
   }
 }
 
+.heading {
+  background-color: white;
+  height: 500px;
+}
+.heading__background {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
