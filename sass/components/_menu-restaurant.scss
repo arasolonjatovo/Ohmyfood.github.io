@@ -3,6 +3,10 @@
     height: 600px;
     position: relative;
 
+    @media (max-width: $phone) {
+        height: 300px;
+    }
+
     &__background {
         object-fit: cover;
         height: 100%;
@@ -17,12 +21,23 @@
     top: 55%;
     border-radius: 60px 60px 0 0;
     text-align: center;
-    margin-bottom: 20em;
+
+    @media (max-width: $phone) {
+        top: 40%;
+        border-radius: 50px 50px 0 0;
+    }
+
     &__description {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 1.5%;
+
+        @media (max-width: $phone) {
+            justify-content: space-between;
+            padding: 10% 4%;
+            margin-bottom: 0;
+        }
 
         & .fa-regular {
             font-size: 1.5rem;
@@ -34,6 +49,12 @@
         text-align: center;
         padding: 3%;
         font-size: 2.5rem;
+
+        @media (max-width: $phone) {
+            text-align: left;
+            font-size: 1.7rem;
+            padding: 0;
+        }
     }
 
     &__button {
@@ -47,6 +68,10 @@
         box-shadow: $button-shadow;
         cursor: pointer;
         margin: 3% 0;
+        @media (max-width: $phone) {
+            margin-bottom: 15%;
+            padding: 5% 8%;
+        }
     }
 }
 
@@ -55,10 +80,19 @@
     justify-content: center;
     column-gap: 8em;
 
+    @media (max-width: $phone) {
+        flex-direction: column;
+        margin: 0 4%;
+    }
+
     &__course {
         font-weight: 400;
         text-transform: uppercase;
         color: #353535;
+
+        @media (max-width: $phone) {
+            font-size: 1.2rem;
+        }
     }
 
     hr {
@@ -67,12 +101,21 @@
         border: none;
         margin-bottom: 5%;
         width: 60px;
+
+        @media (max-width: $phone) {
+            width: 40px;
+        }
     }
 
     &__title {
         font-size: 1.4rem;
         font-weight: 500;
         text-align: left;
+
+        @media (max-width: $phone) {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
     }
 
     &__category {
@@ -84,6 +127,13 @@
             margin-bottom: 15px;
             box-shadow: $button-shadow;
             border-radius: 20px;
+
+            @media (max-width: $phone) {
+                width: 100%;
+            }
+        }
+        @media (max-width: $phone) {
+            margin-bottom: 10%;
         }
     }
 
@@ -91,7 +141,29 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        & p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            @media (max-width: $phone) {
+                text-align: left;
+                font-size: 1rem;
+            }
+        }
+
+        & b {
+            @media (max-width: $phone) {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: $phone) {
+            line-height: 30px;
+            font-size: 1rem;
+        }
     }
+
     &__course {
         text-align: left;
     }
