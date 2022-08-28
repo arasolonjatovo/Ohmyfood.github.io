@@ -320,7 +320,7 @@ img {
   }
 }
 .heading__description .heading__button {
-  padding: 1.2%;
+  padding: 20px;
   margin-top: 25px;
   border-radius: 40px;
   color: white;
@@ -353,13 +353,13 @@ img {
 }
 .process ul {
   display: flex;
-  gap: 8rem;
+  gap: 5%;
   justify-content: center;
   padding: 0.5% 2%;
   counter-reset: tutoStep;
   list-style: none;
 }
-@media (max-width: 778px) {
+@media (max-width: 992px) {
   .process ul {
     margin-top: 10%;
     flex-direction: column;
@@ -368,12 +368,13 @@ img {
   }
 }
 .process ul li {
-  padding: 1.5% 2.7%;
+  padding: 30px 50px;
   background-color: #F6F6F6;
   border-radius: 18px;
   font-weight: 500;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
   position: relative;
+  text-align: center;
 }
 @media (max-width: 778px) {
   .process ul li {
@@ -408,6 +409,14 @@ img {
   grid-column-gap: 40px;
   padding-bottom: 4%;
   max-height: 800px;
+}
+@media (min-width: 778px) and (max-width: 992px) {
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 5%;
+  }
 }
 @media (max-width: 778px) {
   .menu__nav {

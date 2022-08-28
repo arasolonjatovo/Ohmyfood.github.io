@@ -6,6 +6,12 @@
     grid-column-gap: 40px;
     padding-bottom: 4%;
     max-height: 800px;
+    @media (min-width: $phone) and (max-width: $tablet) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 40px;
+        margin-top: 5%;
+    }
     &__nav {
         @media (max-width: $phone) {
             padding: 10% 0;
