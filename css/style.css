@@ -455,6 +455,8 @@ img {
 .menu__image img {
   object-fit: cover;
   object-position: center;
+  height: 500px;
+  width: 100%;
 }
 .menu__image--new::after {
   content: "Nouveau";
