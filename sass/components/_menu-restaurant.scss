@@ -40,7 +40,22 @@
         }
 
         & .fa-regular {
-            font-size: 1.5rem;
+            font-size: 40px;
+            &:hover {
+                &::after {
+                    font-size: 30px;
+                    position: absolute;
+                    content: '\f004';
+                    font: var(--fa-font-solid);
+                    background: linear-gradient(to top right, $secondary-color, $primary-color);
+                    background-clip: border-box;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    left: 1376.5px;
+                    transition: all 50000s;
+                    cursor: pointer;
+                }
+            }
         }
     }
 
@@ -132,6 +147,9 @@
             margin-bottom: 15px;
             box-shadow: $button-shadow;
             border-radius: 20px;
+            &:hover {
+                cursor: pointer;
+            }
 
             @media (max-width: $phone) {
                 max-height: 80px;

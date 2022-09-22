@@ -123,7 +123,20 @@
   }
 }
 .list__description .fa-regular {
-  font-size: 1.5rem;
+  font-size: 40px;
+}
+.list__description .fa-regular:hover::after {
+  font-size: 30px;
+  position: absolute;
+  content: "\f004";
+  font: var(--fa-font-solid);
+  background: linear-gradient(to top right, #FF79DA, #9356DC);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  left: 1376.5px;
+  transition: all 50000s;
+  cursor: pointer;
 }
 .list__title {
   font-family: "Shrikhand", cursive;
@@ -213,6 +226,9 @@
   margin-bottom: 15px;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
   border-radius: 20px;
+}
+.plate__category li:hover {
+  cursor: pointer;
 }
 @media (max-width: 778px) {
   .plate__category li {
@@ -491,6 +507,7 @@ img {
   -webkit-text-fill-color: transparent;
   left: 435.8px;
   transition: all 50000s;
+  cursor: pointer;
 }
 .menu nav {
   background-color: #F6F6F6;
