@@ -24,7 +24,7 @@
         margin-top: 25px;
         border-radius: 40px;
         color: white;
-        background: $secondary-color linear-gradient(180deg, $secondary-color 0%, $primary-color 60%);
+        background: linear-gradient(to bottom right, $secondary-color, $primary-color);
         border: none;
         font-weight: 600;
         box-shadow: $button-shadow;

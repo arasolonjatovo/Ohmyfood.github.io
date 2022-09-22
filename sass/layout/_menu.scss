@@ -6,17 +6,20 @@
     grid-column-gap: 40px;
     padding-bottom: 4%;
     max-height: 800px;
+
     @media (min-width: $phone) and (max-width: $tablet) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 40px;
         margin-top: 5%;
     }
+
     &__nav {
         @media (max-width: $phone) {
             padding: 10% 0;
         }
     }
+
     @media (max-width: $phone) {
         grid-template-columns: 1fr;
         max-height: none;
@@ -39,8 +42,8 @@
         line-height: 30px;
         bottom: 0;
         background-color: white;
-        position: absolute;
         width: 100%;
+        position: absolute;
     }
 
     &__image {
@@ -64,8 +67,32 @@
             top: 20px;
         }
     }
-}
 
-nav {
-    background-color: #F6F6F6;
+    &__fav {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+        & i {
+            font-size: 30px;
+            &:hover {
+                &::after {
+                    font-size: 30px;
+                    position: absolute;
+                    content: '\f004';
+                    font: var(--fa-font-solid);
+                    background: linear-gradient(to top right, $secondary-color, $primary-color);
+                    background-clip: border-box;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    left: 435.8px;
+                    transition: all 50000s;
+                }
+            }
+        }
+    }
+
+    nav {
+        background-color: #F6F6F6;
+    }
 }

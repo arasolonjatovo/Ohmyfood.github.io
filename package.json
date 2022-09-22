@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/arasolonjatovo/ohmyfood#readme",
   "dependencies": {
-    "sass": "^1.54.4"
+    "sass": "^1.54.9"
   }
 }

@@ -1,15 +1,10 @@
 .heading {
-    background-color: white;
     height: 600px;
     position: relative;
 
-    @media (max-width: $phone) {
-        height: 300px;
-    }
-
     &__background {
         object-fit: cover;
-        height: 100%;
+        object-position: center;
         width: 100%;
     }
 }
@@ -18,12 +13,17 @@
     background-color: #F6F6F6;
     position: absolute;
     width: 100%;
-    top: 55%;
+    top: 38%;
     border-radius: 60px 60px 0 0;
     text-align: center;
 
     @media (max-width: $phone) {
-        top: 40%;
+        top: 20%;
+        border-radius: 50px 50px 0 0;
+    }
+
+    @media (min-width: $phone) and (max-width: 1024px) {
+        top: 33%;
         border-radius: 50px 50px 0 0;
     }
 
@@ -52,8 +52,9 @@
 
         @media (max-width: $phone) {
             text-align: left;
-            font-size: 1.7rem;
+            font-size: 1.5rem;
             padding: 0;
+            margin: 0 2%;
         }
     }
 
@@ -68,6 +69,7 @@
         box-shadow: $button-shadow;
         cursor: pointer;
         margin: 3% 0;
+
         @media (max-width: $phone) {
             margin-bottom: 15%;
             padding: 5% 8%;
@@ -76,13 +78,14 @@
 }
 
 .plate {
-    display: flex;
-    justify-content: center;
-    column-gap: 8em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: 1fr;
+    column-gap: 5%;
+    margin: 0 5%;
 
     @media (max-width: $phone) {
-        flex-direction: column;
-        margin: 0 4%;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
 
     &__course {
@@ -111,9 +114,12 @@
         font-size: 1.4rem;
         font-weight: 500;
         text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
         @media (max-width: $phone) {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 600;
         }
     }
@@ -123,15 +129,15 @@
             list-style-type: none;
             padding: 4%;
             background-color: white;
-            width: 500px;
             margin-bottom: 15px;
             box-shadow: $button-shadow;
             border-radius: 20px;
 
             @media (max-width: $phone) {
-                width: 100%;
+                max-height: 80px;
             }
         }
+
         @media (max-width: $phone) {
             margin-bottom: 10%;
         }
@@ -149,7 +155,7 @@
 
             @media (max-width: $phone) {
                 text-align: left;
-                font-size: 1rem;
+                font-size: .9rem;
             }
         }
 
@@ -158,6 +164,7 @@
                 font-size: 1rem;
             }
         }
+
         @media (max-width: $phone) {
             line-height: 30px;
             font-size: 1rem;
