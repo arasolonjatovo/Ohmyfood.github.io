@@ -1,12 +1,13 @@
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
-    font-size: $body-size;
     box-sizing: border-box;
 }
 
 body {
-
+    font-size: $body-size;
     font-family: $body-font;
 }
 
