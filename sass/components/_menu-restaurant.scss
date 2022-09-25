@@ -39,24 +39,29 @@
             margin-bottom: 0;
         }
 
-        & .fa-regular {
-            font-size: 40px;
+        & i {
+            position: relative;
+            font-size: 30px;
 
-            &:hover {
-                &::after {
-                    font-size: 30px;
-                    position: absolute;
-                    content: '\f004';
-                    font: var(--fa-font-solid);
-                    background: linear-gradient(to top right, $secondary-color, $primary-color);
-                    background-clip: border-box;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    left: 1376.5px;
-                    transition: all 50000s;
-                    cursor: pointer;
-                }
+            &:hover::after {
+                opacity: 1;
             }
+
+            &::after {
+                font-size: 30px;
+                position: absolute;
+                content: '\f004';
+                font: var(--fa-font-solid);
+                background: linear-gradient(to top right, $secondary-color, $primary-color);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                cursor: pointer;
+                left: 0;
+                opacity: 0;
+                transition: .5s;
+            }
+
         }
     }
 
