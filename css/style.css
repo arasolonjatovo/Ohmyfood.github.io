@@ -63,6 +63,12 @@
   list-style: none;
   font-weight: 500;
 }
+.footer ul li {
+  opacity: 0.3;
+}
+.footer ul li:hover {
+  opacity: 1;
+}
 @media (max-width: 778px) {
   .footer ul {
     flex-direction: column;
