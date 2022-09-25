@@ -72,31 +72,6 @@
         display: flex;
         justify-content: space-between;
         align-items: end;
-
-        & i {
-            position: relative;
-            font-size: 30px;
-
-            &:hover::after {
-                opacity: 1;
-            }
-
-            &::after {
-                font-size: 30px;
-                position: absolute;
-                content: '\f004';
-                font: var(--fa-font-solid);
-                background: linear-gradient(to top right, $secondary-color, $primary-color);
-                background-clip: border-box;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                cursor: pointer;
-                left: 0;
-                opacity: 0;
-                transition: opacity .3s ease-in-out;
-            }
-
-        }
     }
 
     nav {
