@@ -141,7 +141,7 @@
   cursor: pointer;
   left: 0;
   opacity: 0;
-  transition: 0.5s;
+  transition: opacity 0.3s ease-in-out;
 }
 .list__title {
   font-family: "Shrikhand", cursive;
@@ -516,7 +516,7 @@ img {
   cursor: pointer;
   left: 0;
   opacity: 0;
-  transition: 0.5s;
+  transition: opacity 0.3s ease-in-out;
 }
 .menu nav {
   background-color: #F6F6F6;
