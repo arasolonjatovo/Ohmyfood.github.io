@@ -78,24 +78,6 @@
             margin: 0 2%;
         }
     }
-
-    &__button {
-        padding: 1.2% 2%;
-        margin-top: 25px;
-        border-radius: 40px;
-        color: white;
-        background: linear-gradient(to bottom right, $secondary-color, $primary-color);
-        border: none;
-        font-weight: 600;
-        box-shadow: $button-shadow;
-        cursor: pointer;
-        margin: 3% 0;
-
-        @media (max-width: $phone) {
-            margin-bottom: 15%;
-            padding: 5% 8%;
-        }
-    }
 }
 
 .plate {
