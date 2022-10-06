@@ -25,12 +25,11 @@
 </head>
 
 <body>
-    <!-- <div class="loader">
+    <div class="loader">
         <div class="loader__container">
             <i class="fa-sharp fa-solid fa-circle-notch"></i>
-            <span>Chargement</span>
         </div>
-    </div> -->
+    </div>
     <header>
         <nav>
             <h1 class="heading__nav">ohmyfood</h1>
@@ -43,7 +42,9 @@
             <div class="heading__description">
                 <h2>Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
-                <button class="button" type="button">Explorer nos restaurants</button>
+                <a href="#restaurant">
+                    <button class="button" type="button">Explorer nos restaurants</button>
+                </a>
             </div>
         </section>
     </header>
@@ -67,6 +68,7 @@
         </section>
         <nav class="menu__nav">
             <h2 class="__sub-title">Restaurants</h2>
+            <a id="restaurant"></a>
             <div class="menu">
                 <div class="menu__card">
                     <a href="gout.html">
