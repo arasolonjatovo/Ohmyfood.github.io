@@ -499,6 +499,18 @@ img {
     font-weight: 600;
   }
 }
+.plate__category {
+  animation: fadein 2s both;
+}
+.plate__category:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.plate__category:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.plate__category:nth-child(3) {
+  animation-delay: 0.3s;
+}
 .plate__category li {
   list-style-type: none;
   padding: 4%;
@@ -546,6 +558,17 @@ img {
 }
 .plate__course {
   text-align: left;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

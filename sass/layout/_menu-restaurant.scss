@@ -104,6 +104,15 @@
     }
 
     &__category {
+
+        @for $i from 1 to 4 {
+            &:nth-child(#{$i}) {
+                animation-delay: .1s *$i;
+            }
+        }
+
+        animation: fadein 2s both;
+
         li {
             list-style-type: none;
             padding: 4%;
@@ -152,5 +161,18 @@
 
     &__course {
         text-align: left;
+    }
+
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
