@@ -4,7 +4,8 @@
   "description": "Projet 3 du parcours de développeur web d'Openclassrooms",
   "main": "index.html",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   ],
   "author": "Audrey RASOLONJATOVO",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/arasolonjatovo/ohmyfood/issues"
   },
