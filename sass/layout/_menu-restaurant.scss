@@ -120,11 +120,14 @@
             margin-bottom: 15px;
             box-shadow: $button-shadow;
             border-radius: 20px;
+            position: relative;
 
             @media (max-width: $phone) {
                 max-height: 80px;
             }
+
         }
+
 
         @media (max-width: $phone) {
             margin-bottom: 10%;
@@ -148,6 +151,7 @@
         }
 
         & b {
+
             @media (max-width: $phone) {
                 font-size: 1rem;
             }
@@ -163,6 +167,41 @@
         text-align: left;
     }
 
+    &__container {
+        &:hover {
+            width: 85%;
+        }
+
+        &:hover+.plate__checked {
+            transform: translateX(-100%);
+            width: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .fa-solid {
+                animation: rotate .5s both;
+            }
+        }
+    }
+
+    &__checked {
+        display: none;
+        position: absolute;
+        height: 100%;
+        background-color: $tertiary-color;
+        top: 0;
+        left: 100%;
+        width: 0;
+        border-radius: 0 20px 20px 0;
+        transform: translateX(0);
+        transition: transform 1s linear;
+
+        .fa-solid {
+            color: white;
+            font-size: 24px;
+        }
+    }
+
 }
 
 @keyframes fadein {
@@ -174,5 +213,15 @@
     100% {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: translateX(100%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(0) rotate(360deg);
     }
 }
