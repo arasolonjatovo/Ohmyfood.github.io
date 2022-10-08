@@ -102,7 +102,7 @@
 .button:hover {
   opacity: 0.9;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(44, 43, 43, 0.879);
-  transform: all translateX(5px);
+  transform: translateX(5px);
   transition: all 0.25s;
 }
 @media (max-width: 778px) {
