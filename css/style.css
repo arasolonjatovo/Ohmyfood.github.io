@@ -244,6 +244,9 @@ img {
   position: relative;
   text-align: center;
 }
+.process ul li:last-child {
+  background-color: #F6EDFF;
+}
 @media (max-width: 778px) {
   .process ul li {
     padding: 9%;

@@ -29,6 +29,9 @@
         }
 
         li {
+            &:last-child {
+                background-color: #F6EDFF;
+            }
             padding: 30px 50px;
             background-color: #F6F6F6;
             border-radius: 18px;
