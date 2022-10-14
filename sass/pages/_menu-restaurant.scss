@@ -126,6 +126,22 @@
                 max-height: 80px;
             }
 
+            &:hover>.plate__container {
+                width: 85%;
+            }
+
+            &:hover>.plate__checked {
+                transform: translateX(-100%);
+                width: 15%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .fa-solid {
+                    animation: rotate .5s both;
+                }
+            }
+
         }
 
 
@@ -165,23 +181,6 @@
 
     &__course {
         text-align: left;
-    }
-
-    &__container {
-        &:hover {
-            width: 85%;
-        }
-
-        &:hover+.plate__checked {
-            transform: translateX(-100%);
-            width: 15%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .fa-solid {
-                animation: rotate .5s both;
-            }
-        }
     }
 
     &__checked {

@@ -528,6 +528,19 @@ img {
     max-height: 80px;
   }
 }
+.plate__category li:hover > .plate__container {
+  width: 85%;
+}
+.plate__category li:hover > .plate__checked {
+  transform: translateX(-100%);
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plate__category li:hover > .plate__checked .fa-solid {
+  animation: rotate 0.5s both;
+}
 @media (max-width: 778px) {
   .plate__category {
     margin-bottom: 10%;
@@ -562,19 +575,6 @@ img {
 }
 .plate__course {
   text-align: left;
-}
-.plate__container:hover {
-  width: 85%;
-}
-.plate__container:hover + .plate__checked {
-  transform: translateX(-100%);
-  width: 15%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.plate__container:hover + .plate__checked .fa-solid {
-  animation: rotate 0.5s both;
 }
 .plate__checked {
   display: none;
