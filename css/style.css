@@ -395,7 +395,7 @@ img {
 }
 @media (max-width: 700px) {
   .menu__fav h3 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 .menu__fav .fa-regular {
@@ -436,6 +436,11 @@ img {
   animation: spin 1.5s infinite;
   transition: all ease-out;
   color: #99E3D0;
+}
+@media (max-width: 700px) {
+  .loader__container .fa-circle-notch {
+    font-size: 2rem;
+  }
 }
 .loader__container p {
   letter-spacing: 10px;

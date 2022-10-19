@@ -24,6 +24,9 @@
             animation: spin 1.5s infinite;
             transition: all ease-out;
             color: $tertiary-color;
+            @media (max-width: $phone) {
+                font-size: 2rem;
+            }
         }
 
         p {
