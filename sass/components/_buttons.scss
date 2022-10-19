@@ -1,6 +1,5 @@
     .button {
         padding: 20px;
-        margin-top: 25px;
         border-radius: 40px;
         color: white;
         background: linear-gradient(to bottom right, $secondary-color, $primary-color);
@@ -19,7 +18,8 @@
         }
 
         @media (max-width: $phone) {
-            padding: 5%;
+            padding: 15px 30px;
+            font-size: .9rem;
         }
     }
 
