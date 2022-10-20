@@ -395,7 +395,7 @@ img {
 }
 @media (max-width: 700px) {
   .menu__fav h3 {
-    font-size: 2rem;
+    font-size: 1.1rem;
   }
 }
 .menu__fav .fa-regular {
