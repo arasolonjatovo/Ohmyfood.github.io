@@ -19,8 +19,6 @@ Avoir ce dépôt en local n'est pas nécessaire. Cependant si vous souhaitez clo
 Executez la commande 
 ``git clone git@github.com:arasolonjatovo/ohmyfood.git``
 
-Sinon vous pouvez visiter le site à cette adresse : https://arasolonjatovo.github.io/
-
 ## Fabriqué avec
 
 * HTML 5
